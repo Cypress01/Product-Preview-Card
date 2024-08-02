@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    margin: 50px 0;
+    width: 350px;
+    height: fit-content;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces",sans serif;
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+    font-family: "Montserrat", sans serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+}
+.product {
+    background-image: url(./image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.product-type {
+    margin: 0;
+    letter-spacing: 5px;
+}
+.description {
+    padding: 25px;
+}
+.price {
+    align-items: center;
+    display: flex;
+}
+.price1 {
+    margin-right: 20px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Fraunces", sans serif;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Montserrat", sans serif;
+}
+button:hover {
+    background-color: #1A4031;
+}
+button img {
+    margin: 0 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .product {
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    #container {
+        width: 700px;
+        display: flex;
+    }
+    .description {
+        width: 40%;
+    }
+    .product {
+        background-image: url(./image-product-desktop.jpg);
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        border-radius: 20px 0 0 20px;
+    }
+}
